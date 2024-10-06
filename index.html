@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <script src="./app.js" defer></script>
+    <title>Add to cart</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="hero-container">
+       
+
+        <div  class="flex">
+
+<!-- Menu -->
+            <div class="flexed">
+                <h2>
+                    <strong>Desserts</strong>
+                  </h2>
+<!-- Beginning of the first div -->
+                <div class="flex-1">
+
+                    <!-- Beginning of a product -->
+                  <div class="david">
+                    <div>
+                      <img
+                    id="width"
+                        src="./assets/images/image-waffle-desktop.jpg"
+                        alt="waffle-desktop"
+                      />
+
+                      <!-- Add to cart -->
+                  
+                      <p class="button" id="add-cart" onclick="addToCartBtn('add-cart', 'hidden', 'qtyNum')">
+                        <img src="./assets/images/icon-add-to-cart.svg" alt="Cart" />
+                        Add to Cart
+                      </p>
+
+                        <!-- Quantity -->
+                  
+                        <p  class="hide" id="hidden" >
+                          <!-- onclick="subNum('qtyNum')" -->
+                            <span class="span" id="minus" onclick="subNum('qtyNum')">-</span>
+                            <span class="span" id="qtyNum">1</span>                         
+                            <span class="span" id="add" onclick="addQtyNum('qtyNum')" >+</span>
+                        </p>
+
+
+
+
+                    </div>
+                    
+                    <!-- Menu description -->
+                    <div class="bg-color">
+                      <p>Waffle</p>
+                      <h5>Waffle with Berries</h5>
+                      <p id="red">$6.50</p>
+                    </div>
+                  </div>
+      <!-- End of a product -->
+
+
+      <!-- Beginning of a new product -->
+                  <div  class="david">
+                    <div>
+                      <img
+                        id="width"
+                        src="./assets/images/image-creme-brulee-desktop.jpg"
+                        alt="creme-brulee-desktop"
+                      />
+
+
+                      
+                      <!-- Add to cart -->
+                      <p class="button"  id="add-cart2" onclick="addToCartBtn('add-cart2', 'hidden2', 'qtyNum1')">
+                        <img src="./assets/images/icon-add-to-cart.svg" alt="Cart" />
+                        Add to Cart
+                      </p>
+
+
+
+                        <!-- Quantity -->
+                        <p class="hide"  id="hidden2">
+                            
+                            <span class="span" id="minus" onclick="subNum1('qtyNum1')">-</span>
+                            <span class="span" id="qtyNum1">1</span>                         
+                            <span class="span" id="add" onclick="addQtyNum1('qtyNum1')">+</span>
+                        </p>
+
+
+                        
+                    </div>
+                    
+      <!-- Menu description -->
+                    <div class="bg-color">
+                      <p>Creme Brulee</p>
+                      <h5>Vanilla Bean Creme Brulee</h5>
+                      <p id="red">$7.00</p>
+                    </div>
+                  </div>
+      <!-- End of a product -->
+
+
+      <!-- Beginning of a product -->
+                  <div class="david">
+                    <div>
+                      <img
+                      id="width"
+                        src="./assets/images/image-macaron-desktop.jpg"
+                        alt="waffle-desktop"
+                      />
+                      <!-- Add to Cart -->
+                      <p class="button"  id="add-cart3" onclick="addToCartBtn('add-cart3', 'hidden3', 'qtyNum2')">
+                        <img src="./assets/images/icon-add-to-cart.svg" alt="Cart" />
+                        Add to Cart
+                      </p>
+
+                      <!-- Quantity -->
+                       <p class="hide" id="hidden3">
+                        <span class="span" id="minus" onclick="subNum2('qtyNum2')">-</span>
+                        <span class="span" id="qtyNum2">1</span>
+                        <span class="span" id="add" onclick="addQtyNum2('qtyNum2')">+</span>
+                       </p>
+                      
+                    </div>
+      
+                    <div class="bg-color">
+                      <p>Macaron</p>
+                      <h5>Macaron Mix of Five</h5>
+                      <p id="red">$8.00</p>
+                    </div>
+                  </div>
+      <!-- End of a product -->
+                </div>
+      <!-- End of the first div -->
+      
+
+      <!-- Beginning of the second div -->
+
+                <div class="flex-1">
+
+                    <!-- Beginning of a new product -->
+                  <div class="david">
+                      <div>
+                          
+                        <img
+                        id="width"
+                          src="./assets/images/image-tiramisu-desktop.jpg"
+                          alt="tiramisu-desktop"
+                        />
+                        
+                          <!-- Add to Cart -->
+                      <p class="button"  id="add-cart4" onclick="addToCartBtn('add-cart4', 'hidden4', 'qtyNum3')">
+                        <img src="./assets/images/icon-add-to-cart.svg" alt="Cart" />
+                        Add to Cart
+                      </p>
+
+                      <!-- Quantity -->
+                       <p class="hide" id="hidden4">
+                        <span class="span" id="minus" onclick="subNum3('qtyNum3')">-</span>
+                        <span class="span" id="qtyNum3">1</span>
+                        <span class="span" 
+                        id="add" 
+                        onclick="addQtyNum3('qtyNum3')"
+                        >+</span>
+                       </p>
+                      </div>
+
+
+
+
+        <!-- Menu description -->
+                      <div class="bg-color">
+                        <p>Tiramisu</p>
+                        <h5>Classic Tiramisu</h5>
+                        <p id="red">$5.50</p>
+                      </div>
+                    </div>
+      <!-- End of a product -->
+      
+
+      <!-- Beginning of a product -->
+                    <div class="david">
+                      <div>
+                        <img
+                         id="width"
+                          src="./assets/images/image-baklava-desktop.jpg"
+                          alt="creme-brulee-desktop"
+                        />
+
+
+                          <!-- Add to Cart -->
+                      <p class="button"  id="add-cart5" onclick="addToCartBtn('add-cart5', 'hidden5', 'qtyNum4')"> 
+                        <img src="./assets/images/icon-add-to-cart.svg" alt="Cart" />
+                        Add to Cart
+                      </p>
+
+                      <!-- Quantity -->
+                       <p class="hide" id="hidden5">
+                        <span class="span" id="minus" onclick="subNum4('qtyNum4')">-</span>
+                        <span class="span" id="qtyNum4">1</span>
+                        <span class="span" id="add" onclick="addQtyNum4('qtyNum4')">+</span>
+                       </p>
+                      </div>
+        
+
+                      <!-- Menu description -->
+                      <div class="bg-color">
+                        <p>Baklava</p>
+                        <h5>Pistachip Baklava</h5>
+                        <p id="red">$4.00</p>
+                      </div>
+                    </div>
+      <!-- End of a product -->
+
+
+      <!-- Beginning of a product -->
+                    <div class="david">
+                      <div>
+                        <img
+                       id="width"
+                          src="./assets/images/image-meringue-desktop.jpg"
+                          alt="meringue-desktop"
+                        />
+                         <!-- Add to Cart -->
+                      <p class="button"  id="add-cart6" onclick="addToCartBtn('add-cart6', 'hidden6', 'qtyNum5')">
+                        <img src="./assets/images/icon-add-to-cart.svg" alt="Cart" />
+                        Add to Cart
+                      </p>
+
+                      <!-- Quantity -->
+                       <p class="hide" id="hidden6">
+                        <span class="span" id="minus" onclick="subNum5('qtyNum5')">-</span>
+                        <span class="span" id="qtyNum5">1</span>
+                        <span class="span" id="add" onclick="addQtyNum5('qtyNum5')">+</span>
+                       </p>
+                      </div>
+        
+
+                      <!-- Menu description -->
+                      <div class="bg-color">
+                        <p>Pie</p>
+                        <h5>Lemon Merinuqe Pie </h5>
+                        <p id="red">$5.00</p>
+                      </div>
+                    </div>
+        <!-- End of a product -->
+      
+                </div>
+                <!-- End of the second div -->
+  
+
+      <!-- Beginning of the third div -->
+                <div class="flex-1">
+
+                    <!-- Beginning of a product -->
+                  <div class="david">
+                      <div>
+                          
+                        <img
+                   id="width"
+                          src="./assets/images/image-cake-desktop.jpg"
+                          alt="red-velvet-desktop"
+                        />
+
+
+
+                          <!-- Add to Cart -->
+                      <p class="button"  id="add-cart7" onclick="addToCartBtn('add-cart7', 'hidden7', 'qtyNum6')">
+                        <img src="./assets/images/icon-add-to-cart.svg" alt="Cart" />
+                        Add to Cart
+                      </p>
+
+                      <!-- Quantity -->
+                       <p class="hide" id="hidden7">
+                        <span class="span" id="minus" onclick="subNum6('qtyNum6')">-</span>
+                        <span class="span" id="qtyNum6">1</span>
+                        <span class="span" itemid="add" onclick="addQtyNum6('qtyNum6')">+</span>
+                       </p>
+                      </div>
+
+
+        <!-- Menu description -->
+                      <div class="bg-color">
+                        <p>Cake</p>
+                        <h5>Red Velvet Cake</h5>
+                        <p id="red">$4.50</p>
+                      </div>
+
+                    </div>
+      <!-- End of a product -->
+      
+
+      <!-- Beginning of a product -->
+                    <div class="david">
+                      <div>
+                        <img
+                      id="width"
+                          src="./assets/images/image-brownie-desktop.jpg"
+                          alt="Brownie-desktop"
+                        />
+
+
+
+                          <!-- Add to Cart -->
+                      <p class="button"  id="add-cart8" onclick="addToCartBtn('add-cart8', 'hidden8', 'qtyNum7')">
+                        <img src="./assets/images/icon-add-to-cart.svg" alt="Cart" />
+                        Add to Cart
+                      </p>
+
+                      <!-- Quantity -->
+                       <p class="hide" id="hidden8">
+                        <span class="span" id="minus" onclick="subNum7('qtyNum7')">-</span>
+                        <span class="span" id="qtyNum7">1</span>
+                        <span class="span" id="add" onclick="addQtyNum7('qtyNum7')">+</span>
+                       </p>
+                      </div>
+
+
+        <!-- Menu description -->
+                      <div class="bg-color">
+                        <p>Brownie</p>
+                        <h5>Salted Caramel Brownie</h5>
+                        <p id="red">$5.50</p>
+                      </div>
+                    </div>
+                    <!-- End of a product -->
+
+
+                    <!-- Beginning of a product -->
+      
+                    <div class="david">
+                      <div>
+                        <img
+                        id="width"
+                          src="./assets/images/image-panna-cotta-desktop.jpg"
+                          alt="panna-desktop"
+                        />
+
+
+
+                          <!-- Add to Cart -->
+                      <p class="button"  id="add-cart9" onclick="addToCartBtn('add-cart9', 'hidden9', 'qtyNum8')">
+                        <img src="./assets/images/icon-add-to-cart.svg" alt="Cart" />
+                        Add to Cart
+                      </p>
+
+                      <!-- Quantity -->
+                       <p class="hide" id="hidden9">
+                        <span class="span" id="minus" onclick="subNum8('qtyNum8')">-</span>
+                        <span class="span" id="qtyNum8">1</span>
+                        <span class="span" id="add" onclick="addQtyNum8('qtyNum8')">+</span>
+                       </p>
+                      </div>
+        
+
+                      <!-- Menu description -->
+                      <div class="bg-color">
+                        <p>Panna Cotta</p>
+                        <h5>Vanilla Panna Cotta</h5>
+                        <p id="red">$6.50</p>
+                      </div>
+                    </div>
+        
+      <!-- End of a product -->
+      
+                </div>
+                <!-- End of the third div -->
+                  
+                </div>
+<!-- End of Menu -->
+
+<!-- Beginning of Cart -->
+        <div class="cart">
+                    <div id="carted">
+                        <div class="cartText">
+                            <h3>Your Cart(<span id="cartSpan">0</span>)</h3>
+                        </div>
+                        
+                      <div class="emptyCart" id="emptyCart">
+                        <img src="./assets/images/illustration-empty-cart.svg" alt="empty cart">
+                        <p>Your added items will appear here</p>
+                      </div>
+
+
+
+                      <div class="showCart" id="showCart">
+                        <div class="total">
+                          <p>Order Total</p>
+                          <p>a</p>
+                          
+                      </div>
+                      
+                      <p id="carbon-neutral">
+                          <img src="./assets/images/icon-carbon-neutral.svg" alt="Carbon- Neutral">
+                          This is a <strong> carbon-neutral </strong>  delivery
+                      </p>
+                      
+                  <p id="Confirm">Confirm Order</p>
+                      </div>
+                       
+                    </div>
+                    
+        
+        </div>
+
+<!-- End of Cart -->
+
+
+
+
+        </div>
+
+        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
