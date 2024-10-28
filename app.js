@@ -225,6 +225,25 @@ function subNum6(minusNum) {
   }
 }
 
+function addQtyNum7(addNum) {
+  let addNumQty = document.getElementById(addNum);
+
+  addNumQty.innerText = Number(qtyNum7.innerText) + 1;
+  cartSpan.innerText = Number(cartSpan.innerText) + 1;
+}
+
+function subNum7(minusNum) {
+  let minusNumber = document.getElementById(minusNum);
+
+  if (qtyNum7.innerText <= 0) {
+    addToCart8.style.visibility = "visible";
+    quantity8.style.visibility = "hidden";
+  } else {
+    minusNumber.innerText = Number(qtyNum7.innerText) - 1;
+    cartSpan.innerText = Number(cartSpan.innerText) - 1;
+  }
+}
+
 // // Addition
 // Eighth Product
 // function addQtyNum7(addNum) {
